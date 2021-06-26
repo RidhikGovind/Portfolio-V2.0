@@ -1,0 +1,70 @@
+/* required font-faces */
+@font-face {
+    font-family: 'Neue Helvetica Extended Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('/fonts/Neue Helvetica Extended Thin'),
+        url('/fonts/Helvetica Neue LT 33 Thin Extended.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Neue Helvetica Extended';
+	font-style: normal;
+	font-weight: normal;
+	src: local('/fonts/Neue Helvetica Extended'),
+		url('/fonts/Helvetica Neue LT 53 Extended.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Neue Helvetica Extended Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('/fonts/Neue Helvetica Extended Light'),
+		url('/fonts/Helvetica Neue LT 43 Light Extended.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Neue Helvetica Extended Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('/fonts/Neue Helvetica Extended Medium'),
+		url('/fonts/Helvetica Neue LT 63 Medium Extended.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Neue Helvetica Extended Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('/fonts/Neue Helvetica Extended Bold'),
+		url('/fonts/Helvetica Neue LT 73 Bold Extended.woff') format('woff');
+}
+/**************************/
+
+
+
+/*Global styles */
+
+$font-thin: 'Neue Helvetica Extended Thin';
+$font-light: 'Neue Helvetica Extended Light';
+$font-normal: 'Neue Helvetica Extended';
+$font-medium: 'Neue Helvetica Extended Medium';
+$font-bold: 'Neue Helvetica Extended Bold';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    font-family: $font-light;
+
+}
+
+p{
+    font-family: $font-light;
+    font-size: 1rem;
+}
