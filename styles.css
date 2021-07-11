@@ -164,6 +164,17 @@ a {
   padding: 0.5rem 0;
 }
 
+.project .project__links .demo__link:before,
+.project .project__links .github__link:before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #e6e6e6;
+}
+
 .project .project__links .demo__link:after,
 .project .project__links .github__link:after {
   content: '';
@@ -209,5 +220,16 @@ a {
 
 .project .view_more_projects_btn:hover {
   background: #e8eae6;
+}
+
+/*about me*/
+.tech__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tech__list__item p {
+  font-family: "Neue Helvetica Extended Light";
 }
 /*# sourceMappingURL=styles.css.map */

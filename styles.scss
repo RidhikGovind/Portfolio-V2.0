@@ -123,8 +123,8 @@ a {
 }
 
 /* intro */
-.main {
-}
+// .main {
+// }
 .main__wrapper {
 	margin: 0 5vw;
 }
@@ -149,7 +149,6 @@ a {
 
 /* Projects */
 .project {
-	
 	.project__deets {
 		display: grid;
 		grid-template-columns: 40px auto;
@@ -165,6 +164,15 @@ a {
 			width: fit-content;
 			padding: 0.5rem 0;
 
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				height: 2px;
+				width: 100%;
+				background: rgb(230, 230, 230);
+			}
 			&:after {
 				content: '';
 				position: absolute;
@@ -192,16 +200,24 @@ a {
 		}
 	}
 
-
-
-	.view_more_projects_btn{
+	.view_more_projects_btn {
 		transition: 0.3s ease all;
 		cursor: pointer;
 		background: transparent;
 		font-family: $font-light;
-		
-		&:hover{
+
+		&:hover {
 			background: #e8eae6;
 		}
+	}
+}
+
+/*about me*/
+.tech__list__item {
+	display: flex;
+
+	p {
+		font-family: $font-light;
+		
 	}
 }
