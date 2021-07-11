@@ -43,12 +43,171 @@
   padding: 0;
 }
 
-h1 {
-  font-family: "Neue Helvetica Extended Light";
+html {
+  font-size: 14px;
+  background: #fdfcfa;
+  color: #2f3034;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.subheading,
+a {
+  margin: 0;
 }
 
 p {
+  font-family: "Neue Helvetica Extended";
+  font-size: 1em;
+}
+
+.subheading {
+  font-size: 1.6em;
+}
+
+strong {
   font-family: "Neue Helvetica Extended Light";
-  font-size: 1rem;
+}
+
+a {
+  color: #2f3034;
+  text-decoration: none;
+}
+
+.f1,
+.f2,
+.f3,
+.f4,
+.f5,
+.f6 {
+  font-family: "Neue Helvetica Extended Thin";
+}
+
+.f1 {
+  font-size: 3em;
+}
+
+.f2 {
+  font-size: 2.25em;
+}
+
+.f3 {
+  font-size: 1.6em;
+}
+
+.f4 {
+  font-size: 1.25em;
+}
+
+.f5 {
+  font-size: 1em;
+}
+
+.f6 {
+  font-size: 0.875em;
+}
+
+/* intro */
+.main__wrapper {
+  margin: 0 5vw;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro__title {
+  margin-top: 15vh;
+  height: 8em;
+  border: 1px solid lightblue;
+}
+
+.intro__content {
+  margin-top: 15vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* Projects */
+.project .project__deets {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
+}
+
+.project .project__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px 100px 100px;
+      grid-template-columns: 40px 100px 100px;
+}
+
+.project .project__links .demo__link,
+.project .project__links .github__link {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 0;
+}
+
+.project .project__links .demo__link:after,
+.project .project__links .github__link:after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: black;
+}
+
+.project .project__links .demo__link:hover:after,
+.project .project__links .github__link:hover:after {
+  -webkit-animation: showLinkUnderline 0.3s ease forwards;
+          animation: showLinkUnderline 0.3s ease forwards;
+}
+
+@-webkit-keyframes showLinkUnderline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes showLinkUnderline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.project .view_more_projects_btn {
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  background: transparent;
+  font-family: "Neue Helvetica Extended Light";
+}
+
+.project .view_more_projects_btn:hover {
+  background: #e8eae6;
 }
 /*# sourceMappingURL=styles.css.map */

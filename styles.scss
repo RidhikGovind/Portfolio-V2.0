@@ -1,10 +1,10 @@
 /* required font-faces */
 @font-face {
-    font-family: 'Neue Helvetica Extended Thin';
-    font-style: normal;
-    font-weight: normal;
-    src: local('/fonts/Neue Helvetica Extended Thin'),
-        url('/fonts/Helvetica Neue LT 33 Thin Extended.woff') format('woff');
+	font-family: 'Neue Helvetica Extended Thin';
+	font-style: normal;
+	font-weight: normal;
+	src: local('/fonts/Neue Helvetica Extended Thin'),
+		url('/fonts/Helvetica Neue LT 33 Thin Extended.woff') format('woff');
 }
 
 @font-face {
@@ -14,7 +14,6 @@
 	src: local('/fonts/Neue Helvetica Extended'),
 		url('/fonts/Helvetica Neue LT 53 Extended.woff') format('woff');
 }
-
 
 @font-face {
 	font-family: 'Neue Helvetica Extended Light';
@@ -41,8 +40,6 @@
 }
 /**************************/
 
-
-
 /*Global styles */
 
 $font-thin: 'Neue Helvetica Extended Thin';
@@ -51,20 +48,160 @@ $font-normal: 'Neue Helvetica Extended';
 $font-medium: 'Neue Helvetica Extended Medium';
 $font-bold: 'Neue Helvetica Extended Bold';
 
+$black: #2f3034;
+$white: #fdfcfa;
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-h1{
-    font-family: $font-light;
-
+html {
+	font-size: 14px;
+	background: $white;
+	color: $black;
+	letter-spacing: 0.5px;
 }
 
-p{
-    font-family: $font-light;
-    font-size: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.subheading,
+a {
+	margin: 0;
+}
+
+p {
+	font-family: $font-normal;
+	font-size: 1em;
+}
+
+.subheading {
+	font-size: 1.6em;
+}
+
+strong {
+	font-family: $font-light;
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+}
+
+.f1,
+.f2,
+.f3,
+.f4,
+.f5,
+.f6 {
+	font-family: $font-thin;
+}
+
+.f1 {
+	font-size: 3em;
+}
+.f2 {
+	font-size: 2.25em;
+}
+.f3 {
+	font-size: 1.6em;
+}
+.f4 {
+	font-size: 1.25em;
+}
+.f5 {
+	font-size: 1em;
+}
+.f6 {
+	font-size: 0.875em;
+}
+
+/* intro */
+.main {
+}
+.main__wrapper {
+	margin: 0 5vw;
+}
+.intro {
+	display: flex;
+	// border: 1px solid red;
+	justify-content: center;
+}
+
+.intro__title {
+	margin-top: 15vh;
+	// width: 15vw;
+	height: 8em;
+	border: 1px solid lightblue;
+}
+.intro__content {
+	margin-top: 15vh;
+	height: fit-content;
+	// width: 65vw;
+	// border: 1px solid lightsalmon;
+}
+
+/* Projects */
+.project {
+	
+	.project__deets {
+		display: grid;
+		grid-template-columns: 40px auto;
+	}
+
+	.project__links {
+		display: grid;
+		grid-template-columns: 40px 100px 100px;
+		// transition: 0.3s ease all;
+		.demo__link,
+		.github__link {
+			position: relative;
+			width: fit-content;
+			padding: 0.5rem 0;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				height: 2px;
+				width: 0%;
+				background: black;
+			}
+
+			&:hover {
+				&:after {
+					animation: showLinkUnderline 0.3s ease forwards;
+				}
+			}
+
+			@keyframes showLinkUnderline {
+				from {
+					width: 0%;
+				}
+				to {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+
+	.view_more_projects_btn{
+		transition: 0.3s ease all;
+		cursor: pointer;
+		background: transparent;
+		font-family: $font-light;
+		
+		&:hover{
+			background: #e8eae6;
+		}
+	}
 }
