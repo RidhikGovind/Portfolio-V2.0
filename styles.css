@@ -138,22 +138,22 @@ a {
           justify-content: center;
 }
 
-.intro__heading {
+.intro .intro__heading {
   font-weight: 100;
   margin: 0;
 }
 
-.intro__heading strong {
+.intro .intro__heading strong {
   font-weight: 600;
 }
 
-.intro__title {
+.intro .intro__title {
   margin-top: 15vh;
   height: 8em;
   border: 1px solid lightblue;
 }
 
-.intro__content {
+.intro .intro__content {
   margin-top: 15vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -171,8 +171,8 @@ a {
 .project .project__links {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40px 100px 100px;
-      grid-template-columns: 40px 100px 100px;
+  -ms-grid-columns: 40px 120px 100px;
+      grid-template-columns: 40px 120px 100px;
 }
 
 .project .project__links .demo__link,
