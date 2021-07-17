@@ -50,6 +50,12 @@ html {
   letter-spacing: 0.5px;
 }
 
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -115,7 +121,13 @@ a {
 
 /* intro */
 .main__wrapper {
-  margin: 0 5vw;
+  margin: 0 10vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .main__wrapper {
+    margin: 0 15vw;
+  }
 }
 
 .intro {
@@ -170,7 +182,7 @@ a {
   position: absolute;
   bottom: -3px;
   left: 0;
-  height: 2px;
+  height: 3px;
   width: 100%;
   background: #e6e6e6;
 }
@@ -181,7 +193,7 @@ a {
   position: absolute;
   bottom: -3px;
   left: 0;
-  height: 2px;
+  height: 3px;
   width: 0%;
   background: black;
 }
@@ -231,5 +243,32 @@ a {
 
 .tech__list__item p {
   font-family: "Neue Helvetica Extended Light";
+}
+
+.article-item {
+  line-height: 1.5em;
+  font-family: "Neue Helvetica Extended";
+}
+
+.article-item:hover {
+  -webkit-transition: 2s ease all;
+  transition: 2s ease all;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.socials .socials__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid #e8eae6;
+}
+
+.socials .socials__list .list li a:hover {
+  -webkit-transition: 2s ease all;
+  transition: 2s ease all;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
